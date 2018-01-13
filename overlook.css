@@ -1,0 +1,124 @@
+body{
+  height: 100%;
+  margin: 0;
+  padding:0;
+  min-height: 500px;
+  background-image:-webkit-linear-gradient(18deg, #e85858 50%, #4f7065 50%);
+  box-shadow: 10px, 5px, 20px ;
+  min-height: 1000px;
+  position: relative;
+  display: block;
+}
+#primary_header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: #222020;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right: 0px;
+  box-shadow: 0px 10px 70px #222020;
+  padding-left: 0px;
+  top: 0px;
+}
+#primary_header h1{
+    padding-left: 5%;
+    font-size: 25px;
+    color: #e85858;
+    font-family: "Arial";
+    font-weight: lighter;
+    float: left;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateX(-30px);}
+    to   { opacity: 1; transform: translateX(0px);}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#primary_header p{
+  padding-top: 5px;
+    padding-right: 5%;
+    font-size: 15px;
+    color: #fff;
+    font-family: "Arial";
+    animation-duration:;
+    animation: fadedown 1.3s;
+    float: right;
+    font-weight: lighter;
+}
+    @keyframes fadedown {
+        from { opacity: 0; transform: translateY(-30px);}
+        to   { opacity: 1; transform: translateY(0px);}
+    }
+
+
+#main_land{
+  width: 40%;
+  height: 300px;
+  margin-left: 105px;
+  float:left;
+  margin-top: 40px;
+  background-color: rgba(150, 200, 150, 0.6);
+  border-top: 5px solid #222020;
+  border-radius: 1%;
+}
+
+#footer{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-color: #222020;
+  bottom: 0;
+  box-shadow: 0px 10px 70px #222020;
+}
+  #footer p{
+    text-decoration: mdash;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #f0f0f0;
+    font-family:Arial;
+    margin-left: 5px;
+    margin-top-bottom:10px;
+    align:left;
+    float:left;
+  }
+    #footer > p:before {
+    content: " - ";
+  }
+
+    /* unvisited link */
+   a:link {
+       color: green;
+   }
+
+   /* visited link */
+   a:visited {
+       color: green;
+   }
+
+   /* mouse over link */
+   a:hover {
+       color: #4f7065 ;
+   }
+
+   /* selected link */
+   a:active {
+       color: yellow;
+   }
+
+    }
+}
